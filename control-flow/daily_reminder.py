@@ -16,4 +16,11 @@ match priority:
     case _:
         reminder = f"'{task}' has an unknown priority level"
 
-# Modify remin
+# Use an if statement to check time sensitivity
+if time_bound == "yes":
+    reminder += " that requires immediate attention today!"
+else:
+    reminder += ". Consider completing it when you have free time."
+
+# Provide a customized reminder
+print(f"\nReminder: {reminder}")
